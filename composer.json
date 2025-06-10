@@ -1,0 +1,29 @@
+{
+    "name": "esanj/public-pages",
+    "description": "Public pages for Laravel apps including home and error pages.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Esanj Team"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Esanj\\PublicPages\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Esanj\\PublicPages\\Providers\\PublicPagesServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^12.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
