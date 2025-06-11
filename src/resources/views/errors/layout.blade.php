@@ -12,7 +12,11 @@
     <div class="divider"></div>
     <div class="error-content {{app()->getLocale() === 'fa' ? "text-right" : ""}}">
         <h1 class="error-title">{{__("publicpages::publicpages.errors.{$code}.title")}}</h1>
-        <p class="error-description">{{__("publicpages::publicpages.errors.{$code}.message")}}</p>
+        <p class="error-description">
+            {{$exception->getMessage() !== ""
+            ?$exception->getMessage()
+            :__("publicpages::publicpages.errors.{$code}.message")}}
+        </p>
     </div>
 </div>
 </body>
