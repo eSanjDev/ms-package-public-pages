@@ -13,7 +13,7 @@
     <div class="error-content {{app()->getLocale() === 'fa' ? "text-right" : ""}}">
         <h1 class="error-title">{{__("publicpages::publicpages.errors.{$code}.title")}}</h1>
         <p class="error-description">
-            {{$exception->getMessage() !== ""
+            {{$exception->getMessage() && config('app.debug')
             ?$exception->getMessage()
             :__("publicpages::publicpages.errors.{$code}.message")}}
         </p>
