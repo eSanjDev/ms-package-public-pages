@@ -30,7 +30,7 @@
 </div>
 
 <div class="footer">
-    {{__("publicpages::publicpages.labels.copyright", ["year" => now()->year, "brand" =>config('publicpages.app_name') ])}}
+    {{__("publicpages::publicpages.labels.copyright", ["year" => now()->year, "brand" =>config('esanj.public_pages.app_name') ])}}
 </div>
 </body>
 </html>

@@ -27,7 +27,7 @@ class PublicPagesServiceProvider extends ServiceProvider
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views/errors', 'errors');
 
-        $this->mergeConfigFrom(__DIR__ . '/../config/publicpages.php', 'publicpages');
+        $this->mergeConfigFrom(__DIR__ . '/../config/public_pages.php', 'esanj.public_pages');
 
         $this->loadTranslationsFrom(__DIR__ . '/../lang', 'publicpages');
 
@@ -35,21 +35,21 @@ class PublicPagesServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../resources/views/home.blade.php' => resource_path('views/vendor/publicpages/home.blade.php'),
             __DIR__ . '/../resources/views/errors' => resource_path('views/errors'),
-        ], 'public-pages-views');
+        ], 'esanj-public-pages-views');
 
         // Assets
         $this->publishes([
             __DIR__ . '/../public' => public_path(),
-        ], 'public-pages-assets');
+        ], 'esanj-public-pages-assets');
 
         // Lang
         $this->publishes([
             __DIR__ . '/../lang' => lang_path(),
-        ], 'public-pages-lang');
+        ], 'esanj-public-pages-lang');
 
         // Config
         $this->publishes([
-            __DIR__ . '/../config/publicpages.php' => config_path('publicpages.php'),
-        ], 'public-pages-config');
+            __DIR__ . '/../config/public_pages.php' => config_path('esanj/public_pages.php'),
+        ], 'esanj-public-pages-config');
     }
 }
