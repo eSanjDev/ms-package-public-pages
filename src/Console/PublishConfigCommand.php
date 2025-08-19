@@ -12,7 +12,7 @@ class PublishConfigCommand extends Command
     public function handle(): int
     {
         $this->call('vendor:publish', [
-            '--tag' => 'public-pages-config',
+            '--tag' => 'esanj-public-pages-config',
             '--force' => true
         ]);
 

@@ -12,12 +12,12 @@ class PublishViewsCommand  extends Command
     public function handle(): int
     {
         $this->call('vendor:publish', [
-            '--tag' => 'public-pages-views',
+            '--tag' => 'esanj-public-pages-views',
             '--force' => true
         ]);
 
         $this->call('vendor:publish', [
-            '--tag' => 'public-pages-assets',
+            '--tag' => 'esanj-public-pages-assets',
             '--force' => true
         ]);
 

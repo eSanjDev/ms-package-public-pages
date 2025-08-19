@@ -12,7 +12,7 @@ class PublishLangCommand extends Command
     public function handle(): int
     {
         $this->call('vendor:publish', [
-            '--tag' => 'public-pages-lang',
+            '--tag' => 'esanj-public-pages-lang',
             '--force' => true
         ]);
 
