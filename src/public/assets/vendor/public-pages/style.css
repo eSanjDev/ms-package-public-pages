@@ -144,7 +144,7 @@ body {
 .error-description {
     margin-bottom: 0.5rem;
     color: var(--Neutral-Foreground-2-Rest, #59595A);
-    font-family: 'Peyda', sans-serif;
+    font-family: 'Reddit Sans', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
